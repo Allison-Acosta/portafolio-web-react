@@ -30,7 +30,7 @@ const Footer = () => {
                   href="#about"
                   className="hover:text-secondary transition-colors"
                 >
-                  Sobre Mí
+                  Acerca de mí
                 </a>
               </li>
               <li>

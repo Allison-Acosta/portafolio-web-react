@@ -85,11 +85,10 @@ const Projects = () => {
     <section id="projects" className="bg-muted">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Mis Proyectos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Mis Proyectos Front End</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mt-4 mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Aquí hay una selección de proyectos en los que he trabajado. Cada
-            uno demuestra diferentes habilidades y tecnologías.
+            Aquí hay una selección de proyectos en los que he trabajado en mis inicios como programadora Front End. 
           </p>
         </div>
 

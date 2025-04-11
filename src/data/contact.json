@@ -1,25 +1,16 @@
 {
-  "email": "jane.doe@example.com",
+  "email": "afacosta@uc.cl",
   "socialMedia": [
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/janedoe",
+      "url": "https://www.linkedin.com/in/allison-acosta-fica/",
       "icon": "linkedin"
     },
     {
       "name": "GitHub",
-      "url": "https://github.com/janedoe",
+      "url": "https://github.com/Allison-Acosta",
       "icon": "github"
-    },
-    {
-      "name": "Twitter",
-      "url": "https://twitter.com/janedoe",
-      "icon": "twitter"
-    },
-    {
-      "name": "Instagram",
-      "url": "https://instagram.com/janedoe.dev",
-      "icon": "instagram"
     }
+   
   ]
 }
