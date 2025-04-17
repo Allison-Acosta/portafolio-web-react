@@ -20,50 +20,50 @@ export default {
 		},
 		extend: {
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				border: 'hsl(340, 50%, 85%)',
+				input: 'hsl(340, 50%, 85%)',
+				ring: 'hsl(340, 60%, 70%)',
+				background: 'hsl(0, 0%, 100%)',
+				foreground: 'hsl(340, 20%, 20%)',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+				  DEFAULT: 'hsl(330, 85%, 65%)',
+				  foreground: 'hsl(0, 0%, 100%)',
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+				  DEFAULT: 'hsl(320, 60%, 72%)',
+				  foreground: 'hsl(0, 0%, 100%)',
 				},
 				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+				  DEFAULT: 'hsl(0, 85%, 65%)',
+				  foreground: 'hsl(0, 0%, 100%)',
 				},
 				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+				  DEFAULT: 'hsl(340, 30%, 90%)',
+				  foreground: 'hsl(340, 20%, 40%)',
 				},
 				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+				  DEFAULT: 'hsl(340, 75%, 80%)',
+				  foreground: 'hsl(0, 0%, 20%)',
 				},
 				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+				  DEFAULT: 'hsl(340, 40%, 98%)',
+				  foreground: 'hsl(340, 20%, 20%)',
 				},
 				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+				  DEFAULT: 'hsl(0, 0%, 100%)',
+				  foreground: 'hsl(340, 20%, 20%)',
 				},
 				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
-			},
+				  DEFAULT: 'hsl(340, 60%, 96%)',
+				  foreground: 'hsl(340, 20%, 20%)',
+				  primary: 'hsl(330, 80%, 60%)',
+				  'primary-foreground': 'hsl(0, 0%, 100%)',
+				  accent: 'hsl(340, 80%, 75%)',
+				  'accent-foreground': 'hsl(0, 0%, 20%)',
+				  border: 'hsl(340, 50%, 85%)',
+				  ring: 'hsl(340, 65%, 70%)',
+				},
+			  },
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',

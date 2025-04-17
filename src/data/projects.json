@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "E-commerce Platform",
-    "description": "Plataforma de comercio electrónico completa con catálogo de productos, carrito de compras y procesamiento de pagos.",
+    "name": "Plataforma de hospital Web",
+    "description": "Pagina web de un hospital ficticio.",
     "image": "https://www.innovamediaconsultores.com/wp-content/uploads/2019/12/identidad-corporativa-1.png",
-    "liveUrl": "https://myecommerce-project.netlify.app",
+    "liveUrl": "https://allison-acosta.github.io/ProyectoHospital/",
     "githubUrl": "hhttps://github.com/Allison-Acosta/ProyectoHospital",
     "tags": ["JS","React", "Node.js", "PWA"]
   }
