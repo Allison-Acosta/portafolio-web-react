@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import personalData from "../data/personal.json";
 
+
 const About = () => {
   const [personal, setPersonal] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -32,9 +33,9 @@ const About = () => {
           <div className="lg:w-1/3 flex justify-center">
             <div className="relative w-64 h-64 lg:w-80 lg:h-96 rounded-xl overflow-hidden shadow-xl">
               <img
-                src={personal.avatarUrl}
-                alt={personal.name}
-                className="w-full h-full object-cover"
+                 src={personal.avatarUrl}
+                 alt={personal.name}
+                 className="w-full h-full object-cover"
               />
             </div>
           </div>

@@ -1,70 +1,58 @@
-import React, { useState, useEffect } from "react";
-import personalData from "../data/personal.json";
+import React from "react";
+
+const academicData = [
+  {
+    date: "Oct 2024 - Actual",
+    institution: "Grupo Aspasia - Adalid",
+    detail: "Boot Camp: Especialización en desarrollo de aplicaciones Front-End. Curso: IA para la productividad.",
+  },
+  {
+    date: "Sep 2017",
+    institution: "Pontificia Universidad Católica de Chile",
+    detail: "Obtención de título profesional: Ingeniería Civil con diploma de especialidad Estructural.",
+  },
+  {
+    date: "May 2016 – Jul 2016",
+    institution: "Universidad Adolfo Ibáñez, Santiago de Chile",
+    detail: "Curso: Visual Programming + BIM.",
+  },
+  {
+    date: "2010 - 2016",
+    institution: "Pontificia Universidad Católica de Chile, Santiago de Chile",
+    detail: "Alumna regular de Ingeniería Civil.",
+  },
+  {
+    date: "Sep 2015 – Ene 2016",
+    institution: "Politecnico di Milano, Milán, Italia",
+    detail: "Alumna de intercambio, 'Ingegneria edile-Architettura'.",
+  },
+  {
+    date: "2006 - 2009",
+    institution: "Liceo Carmela Carvajal de Prat, Santiago de Chile",
+    detail: "Alumna de enseñanza media.",
+  },
+];
 
 const Academic = () => {
-  const [personal, setPersonal] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Load personal data
-    setPersonal(personalData);
-    setLoading(false);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="py-20 flex items-center justify-center">Cargando...</div>
-    );
-  }
-
-  // Split the paragraphs based on new lines
-  const bioParagraphs = personal.fullBio.split("\n\n");
-
   return (
-    <section id="academic" className= "bg-white">
-      <div className="container mx-auto">
+    <section id="academic" className="bg-white py-20">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Sobre Mí</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Formación Académica</h2>
           <div className="w-20 h-1 bg-secondary mx-auto mt-4 mb-6"></div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-10 items-center">
-          <div className="lg:w-1/3 flex justify-center">
-            <div className="relative w-64 h-64 lg:w-80 lg:h-96 rounded-xl overflow-hidden shadow-xl">
-              <img
-                src={personal.avatarUrl}
-                alt={personal.name}
-                className="w-full h-full object-cover"
-              />
+        <div className="space-y-8">
+          {academicData.map((item, index) => (
+            <div
+              key={index}
+              className="p-6 bg-gray-100 rounded-xl shadow-md hover:shadow-lg transition"
+            >
+              <h3 className="text-xl font-semibold text-secondary">{item.institution}</h3>
+              <p className="text-sm text-gray-500 mb-2">{item.date}</p>
+              <p className="text-gray-700">{item.detail}</p>
             </div>
-          </div>
-
-          <div className="lg:w-2/3 space-y-4 animate-slide-in">
-            {bioParagraphs.map((paragraph, index) => (
-              <p key={index} className="text-gray-700 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-
-            <div className="mt-8 pt-6 border-t border-gray-200 grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="text-center glass-card p-4">
-                <div className="text-3xl text-secondary font-bold">1+</div>
-                <div className="text-gray-600">Años de Experiencia Front End</div>
-              </div>
-              <div className="text-center glass-card p-4">
-                <div className="text-3xl text-secondary font-bold">5+</div>
-                <div className="text-gray-600">Proyectos Completados</div>
-              </div>
-              <div className="text-center glass-card p-4">
-                <div className="text-3xl text-secondary font-bold">15+</div>
-                <div className="text-gray-600">Tecnologías</div>
-              </div>
-              <div className="text-center glass-card p-4">
-                <div className="text-3xl text-secondary font-bold">3+</div>
-                <div className="text-gray-600">Clientes Satisfechos</div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

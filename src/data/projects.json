@@ -5,7 +5,7 @@
     "description": "Pagina web de un hospital ficticio.",
     "image": "https://www.innovamediaconsultores.com/wp-content/uploads/2019/12/identidad-corporativa-1.png",
     "liveUrl": "https://allison-acosta.github.io/ProyectoHospital/",
-    "githubUrl": "hhttps://github.com/Allison-Acosta/ProyectoHospital",
+    "githubUrl": "https://github.com/Allison-Acosta/ProyectoHospital",
     "tags": ["JS","React", "Node.js", "PWA"]
   }
   
